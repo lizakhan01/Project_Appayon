@@ -7,8 +7,20 @@ import bgImage from "./bg2.jpg";
 
 import "./Home.css";
 
-const Navbar = () => {
+const Navbar = () => 
+  {
   const [foodname, setFoodName] = useState("");
+
+  const getFoodName = (e) =>{
+    e.preventDefault(); 
+  //  value = e.target.value;
+  //  setFoodName(value);
+
+  //send it to backend and check for the food
+  
+
+   console.log(foodname);
+  }
 
   return (
     <div className="page-body">
@@ -16,7 +28,7 @@ const Navbar = () => {
       <div className="nav-bar">
         <nav className="navbar navbar-expand-lg bg-body-tertiary">
           <div className="container-fluid">
-            <div className="tomato">
+            <div className="appayon">
               <p>
                 <b>APPAYON</b>
               </p>
@@ -82,24 +94,24 @@ const Navbar = () => {
                     </ul>
                   </li>
 
-                  <li className="nav-item-left">
-                    <a className="nav-link active" aria-disabled="true">
-                      Mobile App
-                    </a>
-                  </li>
+                 
+
                 </ul>
               </div>
 
-              <form className="d-flex" role="search">
+              <form className="d-flex" role="search" onSubmit={getFoodName} >
                
                 <input
                   className="form-control me-2"
                   type="search"
                   placeholder="Search"
                   aria-label="Search"
+                  value={foodname}
+                  onChange={(e) => setFoodName(e.target.value)}
+                  
                 />
                 
-                <button className="btn btn-outline-success" type="submit">
+                <button className="btn btn-outline-success" type="submit" >
                   Search
                 </button>
               </form>
