@@ -4,19 +4,20 @@
   }
   
   .navbar-nav .nav-item-left {
+    
     margin-left: 20px;
     margin-right: 20px; /* Adjust the value to increase the spacing between nav items */
   }
 
   
   
-  .tomato {
+  .appayon {
     color: red;
     text-align: center;
     font-size: 1.5rem; /* Adjust the font size as needed */
   }
   
-  .tomato p {
+  .appayon p {
     margin: 0; /* Remove default paragraph margin */
   }
   
@@ -31,7 +32,7 @@
   /* Custom styles for the right-side navigation items */
 
 .nav-item-right-signin {
-    margin-left: 450px; /* Adjust the left margin as needed */
+    margin-left: 550px; /* Adjust the left margin as needed */
     display: flex;
     align-items: center;
     height: 40px; /* Adjust the height as needed */
@@ -43,6 +44,7 @@
   
   .nav-item-right-signin .btn {
     height: 100%;
+    width: 100px;
     padding: 0 10px; /* Adjust padding inside the button */
   }
   
