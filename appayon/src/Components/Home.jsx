@@ -1,7 +1,5 @@
-
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import { useState } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min.js";
 import bgImage from "./bg2.jpg";
@@ -105,19 +103,15 @@ const Navbar = () => {
 
               <div className="nav-item-right">
                 <li className="nav-item-right-signin">
-                  <button type="submit" className="btn btn-outline-primary">
-                    <Link to="/signIn" className="nav-link active">
-                      Sign In
-                    </Link>
-                  </button>
+                  <Link to="/signin" className="nav-link active">
+                    Sign In
+                  </Link>
                 </li>
 
                 <li className="nav-item-right-signup">
-                  <button type="submit" className="btn btn-outline-secondary">
-                    <Link to="/signUp" className="nav-link active">
-                      Sign Up
-                    </Link>
-                  </button>
+                  <Link to="/signup" className="nav-link active">
+                    Sign Up
+                  </Link>
                 </li>
 
                 <li className="nav-item-right-cart">
