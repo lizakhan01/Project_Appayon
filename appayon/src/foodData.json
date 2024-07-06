@@ -1,0 +1,58 @@
+[
+  {
+    "id": 1,
+    "name": "Pasta Alfredo",
+    "price": "$12.99",
+    "description": "Classic pasta with fresh mozzarella and basil.",
+    "review": "4.5",
+    "image": "./Assets/food_27.png"
+  },
+  {
+    "id": 2,
+    "name": "Spaghetti Carbonara",
+    "price": "$15.99",
+    "description": "Pasta with eggs, cheese, pancetta, and pepper.",
+    "review": "4.8",
+    "image": "./Assets/food_26.png"
+  },
+  {
+    "id": 3,
+    "name": "Caesar Salad",
+    "price": "$10.99",
+    "description": "Romaine lettuce with Caesar dressing and croutons.",
+    "review": "4.2",
+    "image": "./Assets/salad.png"
+  },
+  {
+    "id": 3,
+    "name": "Caesar Salad",
+    "price": "$10.99",
+    "description": "Romaine lettuce with Caesar dressing and croutons.",
+    "review": "4.2",
+    "image": "./Assets/salad.png"
+  },
+  {
+    "id": 3,
+    "name": "Caesar Salad",
+    "price": "$10.99",
+    "description": "Romaine lettuce with Caesar dressing and croutons.",
+    "review": "4.2",
+    "image": "./Assets/salad.png"
+  },
+  {
+    "id": 3,
+    "name": "Caesar Salad",
+    "price": "$10.99",
+    "description": "Romaine lettuce with Caesar dressing and croutons.",
+    "review": "4.2",
+    "image": "./Assets/salad.png"
+  },
+  {
+    "id": 3,
+    "name": "Caesar Salad",
+    "price": "$10.99",
+    "description": "Romaine lettuce with Caesar dressing and croutons.",
+    "review": "4.2",
+    "image": "./Assets/salad.png"
+  }
+]

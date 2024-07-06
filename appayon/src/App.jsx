@@ -1,7 +1,10 @@
+// src/App.jsx
+
 import React from "react";
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import { BrowserRouter as Router, Route, Routes, Navigate } from "react-router-dom";
 import "./App.css";
 import Home from "./Components/Home";
+import Menu from "./Components/MenuBar";
 import SignUp from "./Components/SignUp";
 import SignIn from "./Components/SignIn";
 
@@ -10,9 +13,11 @@ function App() {
     <div className="App">
       <Router>
         <Routes>
-          <Route path="/" element={<Home />} />
+          <Route path="/home" element={<Home />} />
+          <Route path="/menu" element={<Menu />} />
           <Route path="/signUp" element={<SignUp />} />
           <Route path="/signIn" element={<SignIn />} />
+          <Route path="*" element={<Navigate to="/home" />} />
         </Routes>
       </Router>
     </div>
