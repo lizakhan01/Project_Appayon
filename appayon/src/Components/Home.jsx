@@ -1,4 +1,4 @@
- main
+
 import "bootstrap/dist/css/bootstrap.min.css";
 import bgImage from "./bg2.jpg";
 import "./Home.css";
