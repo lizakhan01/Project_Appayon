@@ -20,8 +20,9 @@
 }
 
 .menu-item:hover {
-  transform: translateY(-5px); /* Lift item on  hover */
+  transform: translateY(-5px); /* Lift item on hover */
 }
+
 
 .menu-item img {
   width: 100%;
