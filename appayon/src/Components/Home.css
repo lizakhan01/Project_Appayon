@@ -1,4 +1,4 @@
-/* Home.css */
+
 .nav-bar {
   padding: 1rem;
 }
@@ -26,6 +26,7 @@
 
 /* Custom styles for the right-side navigation items */
 
+
 .nav-item-right-signin {
   margin-left: 550px; /* Adjust the left margin as needed */
   display: flex;
@@ -38,16 +39,54 @@
 }
 
 .nav-item-right-signin .btn {
+
+.nav-item-right {
+  display: flex;
+  align-items: center;
+  margin-left: auto; /* Push the right-side items to the rightmost side */
+}
+
+.nav-item-right-signin, 
+.nav-item-right-signup {
+  display: flex;
+  align-items: center;
+  height: 40px; /* Adjust the height as needed */
+  margin-left: 15px; /* Space between Sign In and Sign Up buttons */
+}
+
+.nav-item-right-signin .nav-link,
+.nav-item-right-signup .nav-link {
+  padding: 0;
+}
+
+.nav-item-right-signin .btn,
+.nav-item-right-signup .btn {
+
   height: 100%;
   width: 100px;
   padding: 0 10px; /* Adjust padding inside the button */
 }
+
 
 .nav-item-right-cart {
   margin-left: 15px; /* Adjust the left margin as needed */
   display: flex;
   align-items: center;
   height: 40px; /* Adjust the height as needed */
+
+/* Hover effects for buttons */
+.nav-item-right-signin .btn:hover,
+.nav-item-right-signup .btn:hover {
+  background-color: #007bff; /* Blue color for hover */
+  color: white; /* White text on hover */
+}
+
+.nav-item-right-cart {
+  display: flex;
+  align-items: center;
+  height: 40px; /* Adjust the height as needed */
+  margin-left: 15px; /* Adjust the left margin as needed */
+
 }
 
 .nav-item-right-cart svg {
@@ -57,7 +96,11 @@
 
 .bg-picture {
   width: 100%;
+
   height: 800px; /* Adjust the height as needed */
+
+  height: 550px; /* Adjust the height as needed */
+
   background-size: cover;
   background-position: center;
   display: flex;
@@ -71,3 +114,39 @@
   z-index: 1; /* Ensure the text is above any potential background overlays */
   margin-left: 20px; /* Adjust as needed to position text from the left */
 }
+
+
+
+
+
+
+
+
+.search-container {
+  position: relative;
+}
+
+.suggestions {
+  position: absolute;
+  top: 100%; /* Position below the input */
+  left: 0;
+  right: 0;
+  background-color: white;
+  border: 1px solid #ccc;
+  z-index: 10;
+  max-height: 200px; /* Limit the height of the suggestion box */
+  overflow-y: auto; /* Enable scrolling for overflow */
+  width: calc(100% - 2px); /* Match the width of the input */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional shadow */
+}
+
+.suggestion-item {
+  padding: 10px;
+  cursor: pointer;
+}
+
+.suggestion-item:hover {
+  background-color: #f0f0f0;
+}
+
+

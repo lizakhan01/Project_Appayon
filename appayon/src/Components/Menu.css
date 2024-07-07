@@ -1,0 +1,75 @@
+/* Menu.css */
+
+
+.menu-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 20px;
+}
+
+.menu-item {
+  width: calc(100% - 20px); /* Adjust width for three items per row with spacing */
+  margin: 10px;
+  text-align: center;
+  box-sizing: border-box;
+  border: 1px solid #ddd; /* Optional border for each item */
+  border-radius: 8px; /* Optional border radius */
+  padding: 25px;
+  transition: transform 0.3s ease; /* Add transition effect on hover */
+}
+
+.menu-item:hover {
+  transform: translateY(-5px); /* Lift item on hover */
+}
+
+
+.menu-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.menu-item-details {
+  margin-top: 10px;
+}
+
+.menu-item-name {
+  margin-top: 8px;
+  margin-bottom: 8px;
+  font-size: 1.2rem;
+  white-space: nowrap; /* Prevent item name from wrapping */
+  overflow: hidden; /* Hide overflow text */
+  text-overflow: ellipsis; /* Display ellipsis (...) for overflow text */
+}
+
+.menu-item-description {
+  margin-bottom: 10px;
+  color: #555;
+}
+
+.menu-item-price {
+  font-weight: bold;
+  color: #007bff;
+}
+
+.menu-item-review {
+  font-size: 14px;
+  color: #888;
+}
+
+.add-to-cart-button {
+  display: inline-block;
+  padding: 8px 16px;
+  margin-top: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.add-to-cart-button:hover {
+  background-color: #0056b3;
+}
