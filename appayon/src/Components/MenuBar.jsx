@@ -1,12 +1,9 @@
 
-// Menu.jsx
-
 import React from "react";
 import { Link } from "react-router-dom";
 import foodData from "../foodData.json";
 import "./Menu.css";
 
-// Importing individual food images
 import foodImage1 from "../Assets/food_2.png";
 import foodImage2 from "../Assets/food_3.png";
 import foodImage3 from "../Assets/food_4.png";
@@ -29,7 +26,7 @@ import foodImage19 from "../Assets/food_20.png";
 
 import foodImage20 from "../Assets/food_26.png";
 import foodImage21 from "../Assets/salad.png";
-// Add more image imports as needed for each food item
+
 
 const Menu = () => {
   const getImageForFood = (imagePath) => {
@@ -83,7 +80,7 @@ const Menu = () => {
 
       case "./Assets/salad.png":
         return foodImage21;
-      // Add more cases for other images
+
       default:
         return foodImage1; // Default image if no match
     }

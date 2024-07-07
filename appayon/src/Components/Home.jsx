@@ -1,6 +1,4 @@
-import React, { useState, useEffect } from "react";
-import { Link, useNavigate } from "react-router-dom";
-import foodData from "../foodData.json";
+
 import "bootstrap/dist/css/bootstrap.min.css";
 import bgImage from "./bg2.jpg";
 import "./Home.css";
@@ -194,6 +192,5 @@ const Home = () => {
   );
 };
 
-
-
 export default Home;
+
