@@ -86,3 +86,36 @@
   z-index: 1; /* Ensure the text is above any potential background overlays */
   margin-left: 20px; /* Adjust as needed to position text from the left */
 }
+
+
+
+
+
+
+.search-container {
+  position: relative;
+}
+
+.suggestions {
+  position: absolute;
+  top: 100%; /* Position below the input */
+  left: 0;
+  right: 0;
+  background-color: white;
+  border: 1px solid #ccc;
+  z-index: 10;
+  max-height: 200px; /* Limit the height of the suggestion box */
+  overflow-y: auto; /* Enable scrolling for overflow */
+  width: calc(100% - 2px); /* Match the width of the input */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional shadow */
+}
+
+.suggestion-item {
+  padding: 10px;
+  cursor: pointer;
+}
+
+.suggestion-item:hover {
+  background-color: #f0f0f0;
+}
+

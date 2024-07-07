@@ -1,17 +1,58 @@
-import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import React, { useState, useEffect } from "react";
+import { Link, useNavigate } from "react-router-dom";
+import foodData from "../foodData.json";
 import "bootstrap/dist/css/bootstrap.min.css";
-import "bootstrap/dist/js/bootstrap.bundle.min.js";
 import bgImage from "./bg2.jpg";
 import "./Home.css";
 
-const Navbar = () => {
+const Home = () => {
   const [foodname, setFoodName] = useState("");
+  const [suggestions, setSuggestions] = useState([]);
+  const navigate = useNavigate();
 
-  const getFoodName = (e) => {
+  useEffect(() => {
+    if (foodname.trim()) {
+      const filteredSuggestions = foodData.filter((food) =>
+        food.name.toLowerCase().includes(foodname.toLowerCase())
+      );
+      // Sort suggestions to prioritize items that start with the search query
+      const sortedSuggestions = sortSuggestions(filteredSuggestions, foodname.toLowerCase());
+      setSuggestions(sortedSuggestions);
+    } else {
+      setSuggestions([]);
+    }
+  }, [foodname]);
+
+  const sortSuggestions = (suggestions, query) => {
+    const startsWithQuery = [];
+    const containsQuery = [];
+    
+    suggestions.forEach((food) => {
+      const lowerCaseName = food.name.toLowerCase();
+      if (lowerCaseName.startsWith(query)) {
+        startsWithQuery.push(food);
+      } else if (lowerCaseName.includes(query)) {
+        containsQuery.push(food);
+      }
+    });
+    
+    return [...startsWithQuery, ...containsQuery];
+  };
+
+  const handleInputChange = (e) => {
+    setFoodName(e.target.value);
+  };
+
+  const handleSuggestionClick = (suggestion) => {
+    setFoodName(suggestion.name);
+    setSuggestions([]);
+    navigate(`/menu/${suggestion.id}`); // Navigate to item detail page
+  };
+
+  const handleSearchSubmit = (e) => {
     e.preventDefault();
-    // Handle search functionality
-    console.log(foodname);
+    setSuggestions([]);
+    navigate(`/menu?search=${encodeURIComponent(foodname)}`); // Navigate to menu with search query
   };
 
   return (
@@ -35,10 +76,7 @@ const Navbar = () => {
             >
               <span className="navbar-toggler-icon"></span>
             </button>
-            <div
-              className="collapse navbar-collapse"
-              id="navbarSupportedContent"
-            >
+            <div className="collapse navbar-collapse" id="navbarSupportedContent">
               <div className="navs">
                 <ul className="navbar-nav me-auto mb-2 mb-lg-0">
                   <li className="nav-item-left">
@@ -46,13 +84,11 @@ const Navbar = () => {
                       Home
                     </Link>
                   </li>
-
                   <li className="nav-item-left">
                     <Link to="/menu" className="nav-link">
                       Menu
                     </Link>
                   </li>
-
                   <li className="nav-item-left dropdown">
                     <a
                       className="nav-link dropdown-toggle"
@@ -79,7 +115,7 @@ const Navbar = () => {
                       </li>
                       <li>
                         <Link to="/contact" className="dropdown-item">
-                          Something else here{" "}
+                          Something else here
                         </Link>
                       </li>
                     </ul>
@@ -87,18 +123,33 @@ const Navbar = () => {
                 </ul>
               </div>
 
-              <form className="d-flex" role="search" onSubmit={getFoodName}>
-                <input
-                  className="form-control me-2"
-                  type="search"
-                  placeholder="Search"
-                  aria-label="Search"
-                  value={foodname}
-                  onChange={(e) => setFoodName(e.target.value)}
-                />
-                <button className="btn btn-outline-success" type="submit">
-                  Search
-                </button>
+              <form className="d-flex" role="search" onSubmit={handleSearchSubmit}>
+                <div className="search-container">
+                  <input
+                    className="form-control me-2"
+                    type="search"
+                    placeholder="Search"
+                    aria-label="Search"
+                    value={foodname}
+                    onChange={handleInputChange}
+                  />
+                  <button className="btn btn-outline-success" type="submit">
+                    Search
+                  </button>
+                  {suggestions.length > 0 && (
+                    <div className="suggestions">
+                      {suggestions.map((suggestion) => (
+                        <div
+                          key={suggestion.id}
+                          className="suggestion-item"
+                          onClick={() => handleSuggestionClick(suggestion)}
+                        >
+                          {suggestion.name}
+                        </div>
+                      ))}
+                    </div>
+                  )}
+                </div>
               </form>
 
               <div className="nav-item-right">
@@ -107,13 +158,11 @@ const Navbar = () => {
                     Sign In
                   </Link>
                 </li>
-
                 <li className="nav-item-right-signup">
                   <Link to="/signup" className="nav-link active">
                     Sign Up
                   </Link>
                 </li>
-
                 <li className="nav-item-right-cart">
                   <Link to="/cart" className="nav-link active">
                     <svg
@@ -145,4 +194,4 @@ const Navbar = () => {
   );
 };
 
-export default Navbar;
+export default Home;
