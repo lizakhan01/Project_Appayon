@@ -94,6 +94,7 @@ const MenuItemDetail = () => {
     }
   };
 
+  
   return (
     <div className="item-detail-container">
       <div className="item-detail">

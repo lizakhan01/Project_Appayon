@@ -1,5 +1,6 @@
 /* Menu.css */
 
+
 .menu-container {
   display: flex;
   flex-wrap: wrap;
@@ -19,7 +20,7 @@
 }
 
 .menu-item:hover {
-  transform: translateY(-5px); /* Lift item on hover */
+  transform: translateY(-5px); /* Lift item on  hover */
 }
 
 .menu-item img {

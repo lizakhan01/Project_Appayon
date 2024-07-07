@@ -164,7 +164,7 @@
   {
     "id": 20,
     "name": "Caesar Salad",
-    "price": "$10.99",
+    "price": "$13.99",
     "description": "Romaine lettuce with Caesar dressing and croutons.",
     "review": "4.2",
     "image": "./Assets/salad.png"

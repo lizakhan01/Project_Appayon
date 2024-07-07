@@ -19,7 +19,7 @@ function App() {
           <Route path="/menu/:id" element={<MenuItemDetail />} />
           <Route path="/signUp" element={<SignUp />} />
           <Route path="/signIn" element={<SignIn />} />
-          <Route path="*" element={<Navigate to="/home" />} />
+          <Route path="*" element={<Navigate to="/home"  />} />
         </Routes>
       </Router>
     </div>
