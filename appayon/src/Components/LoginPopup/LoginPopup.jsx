@@ -24,11 +24,11 @@ const LoginPopup = ({ setShowLogin }) => {
 
   const onLogin = async (event) => {
     event.preventDefault();
-    let newUrl = url;
+    let newUrl;
     if (currState === "Login") {
-      newUrl += "/api/user/login";
+      newUrl = "${url}/api/user/login";
     } else {
-      newUrl += "/api/user/register";
+      newUrl = "${url}/api/user/register";
     }
 
     try {
