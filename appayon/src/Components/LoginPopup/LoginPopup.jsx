@@ -1,6 +1,8 @@
 import axios from "axios";
 import React, { useContext, useState } from "react";
-import { assets } from "../../assets/assets";
+//import { assets } from "../../assets/assets";
+
+import { assets } from "../../Assets/assets";
 import { StoreContext } from "../../context/StoreContext";
 import "./LoginPopup.css";
 
@@ -26,9 +28,9 @@ const LoginPopup = ({ setShowLogin }) => {
     event.preventDefault();
     let newUrl;
     if (currState === "Login") {
-      newUrl = "${url}/api/user/login";
+      newUrl =`${url}/api/user/login`;
     } else {
-      newUrl = "${url}/api/user/register";
+      newUrl = `${url}/api/user/register`;
     }
 
     try {
