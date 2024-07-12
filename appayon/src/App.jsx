@@ -93,37 +93,36 @@ export default App;*/
 
 //Latest
 import React, { useState } from "react";
-import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
+import { Navigate, Route, BrowserRouter as Router, Routes } from "react-router-dom";
 import "./App.css";
 import Home from "./Components/Home";
 import LoginPopup from "./Components/LoginPopup/LoginPopup";
+import Menu from "./Components/Menu";
+import MenuItemDetail from "./Components/MenuItemDetail";
 import Navbar from "./Components/Navbar";
+import SignIn from "./Components/SignIn";
+import SignUp from "./Components/SignUp";
 
 function App() {
   const [showLogin, setShowLogin] = useState(false);
 
   return (
-  
-      <Router>
+    <Router>
       <div className="App">
         {showLogin ? <LoginPopup setShowLogin={setShowLogin} /> : null}
         <Navbar setShowLogin={setShowLogin} />
         <Routes>
           <Route path="/home" element={<Home />} />
-        </Routes>
-      </div>
-    </Router>
-
           <Route path="/menu" element={<Menu />} />
           <Route path="/menu/:id" element={<MenuItemDetail />} />
           <Route path="/signUp" element={<SignUp />} />
           <Route path="/signIn" element={<SignIn />} />
           <Route path="*" element={<Navigate to="/home" />} />
         </Routes>
-      </Router>
-    </div>
-
+      </div>
+    </Router>
   );
 }
 
 export default App;
+
