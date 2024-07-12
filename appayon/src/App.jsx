@@ -1,7 +1,18 @@
+
 /*import React from "react";
 import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
+=======
+// App.jsx
+
+import React from "react";
+import { BrowserRouter as Router, Route, Routes, Navigate } from "react-router-dom";
+
 import "./App.css";
 import Home from "./Components/Home";
+import Menu from "./Components/MenuBar";
+import MenuItemDetail from "./Components/MenuItemDetail";
+import SignUp from "./Components/SignUp";
+import SignIn from "./Components/SignIn";
 
 
 function App() {
@@ -69,6 +80,7 @@ function App() {
         <Routes>
           <Route path="/home" element={<Home />} />
 
+
         </Routes>
       </div>
     </Router>
@@ -101,6 +113,15 @@ function App() {
         </Routes>
       </div>
     </Router>
+
+          <Route path="/menu" element={<Menu />} />
+          <Route path="/menu/:id" element={<MenuItemDetail />} />
+          <Route path="/signUp" element={<SignUp />} />
+          <Route path="/signIn" element={<SignIn />} />
+          <Route path="*" element={<Navigate to="/home" />} />
+        </Routes>
+      </Router>
+    </div>
 
   );
 }
