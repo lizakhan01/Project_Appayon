@@ -1,4 +1,3 @@
-
 .nav-bar {
   padding: 1rem;
 }
@@ -25,8 +24,6 @@
 }
 
 /* Custom styles for the right-side navigation items */
-
-
 .nav-item-right-signin {
   margin-left: 550px; /* Adjust the left margin as needed */
   display: flex;
@@ -39,6 +36,10 @@
 }
 
 .nav-item-right-signin .btn {
+  height: 100%;
+  width: 100px;
+  padding: 0 10px; /* Adjust padding inside the button */
+}
 
 .nav-item-right {
   display: flex;
@@ -46,7 +47,7 @@
   margin-left: auto; /* Push the right-side items to the rightmost side */
 }
 
-.nav-item-right-signin, 
+.nav-item-right-signin,
 .nav-item-right-signup {
   display: flex;
   align-items: center;
@@ -59,20 +60,23 @@
   padding: 0;
 }
 
-.nav-item-right-signin .btn,
 .nav-item-right-signup .btn {
-
   height: 100%;
   width: 100px;
   padding: 0 10px; /* Adjust padding inside the button */
 }
-
 
 .nav-item-right-cart {
   margin-left: 15px; /* Adjust the left margin as needed */
   display: flex;
   align-items: center;
   height: 40px; /* Adjust the height as needed */
+}
+
+.nav-item-right-cart svg {
+  width: 24px; /* Adjust the icon width */
+  height: 24px; /* Adjust the icon height */
+}
 
 /* Hover effects for buttons */
 .nav-item-right-signin .btn:hover,
@@ -81,26 +85,9 @@
   color: white; /* White text on hover */
 }
 
-.nav-item-right-cart {
-  display: flex;
-  align-items: center;
-  height: 40px; /* Adjust the height as needed */
-  margin-left: 15px; /* Adjust the left margin as needed */
-
-}
-
-.nav-item-right-cart svg {
-  width: 24px; /* Adjust the icon width */
-  height: 24px; /* Adjust the icon height */
-}
-
 .bg-picture {
   width: 100%;
-
-  height: 800px; /* Adjust the height as needed */
-
   height: 550px; /* Adjust the height as needed */
-
   background-size: cover;
   background-position: center;
   display: flex;
@@ -114,13 +101,6 @@
   z-index: 1; /* Ensure the text is above any potential background overlays */
   margin-left: 20px; /* Adjust as needed to position text from the left */
 }
-
-
-
-
-
-
-
 
 .search-container {
   position: relative;
@@ -148,5 +128,3 @@
 .suggestion-item:hover {
   background-color: #f0f0f0;
 }
-
-

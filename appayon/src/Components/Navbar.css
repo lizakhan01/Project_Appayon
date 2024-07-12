@@ -1,0 +1,82 @@
+.nav-bar {
+  background-color: #ffffff; /* White background */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  padding: 10px 0; /* Padding around the navbar */
+}
+
+.navbar {
+  padding: 0 20px; /* Padding for the navbar content */
+}
+
+/* Styling the Appayon brand text */
+.appayon {
+  font-size: 24px; /* Larger font size */
+  font-weight: bold; /* Bold text */
+  color: #333; /* Dark text color */
+  margin-right: 20px; /* Space between brand text and toggler */
+}
+
+/* Styling the navigation links */
+.nav-link {
+  color: #333; /* Dark text color */
+  font-weight: 500; /* Medium font weight */
+}
+
+.nav-link:hover {
+  color: #007bff; /* Blue color on hover */
+}
+
+/* Styling the search form */
+.form-control {
+  width: 300px; /* Adjust width as needed */
+}
+
+.btn-outline-success {
+  color: #28a745; /* Green button text color */
+  border-color: #28a745; /* Green button border color */
+}
+
+.btn-outline-success:hover {
+  background-color: #28a745; /* Green background on hover */
+  color: #fff; /* White text on hover */
+}
+
+/* Styling the sign-in button */
+.btn-outline-primary {
+  color: #007bff; /* Blue button text color */
+  border-color: #007bff; /* Blue button border color */
+}
+
+.btn-outline-primary:hover {
+  background-color: #007bff; /* Blue background on hover */
+  color: #fff; /* White text on hover */
+}
+
+/* Styling the cart icon */
+.bi-cart4 {
+  margin-top: -2px; /* Adjust alignment */
+  margin-right: 5px; /* Space between icon and text */
+}
+
+/* Styling the background image section */
+.bg-picture {
+  position: relative; /* Ensure relative positioning for absolute positioning */
+  height: 600px; /* Adjust height as needed */
+  background-size: cover; /* Cover background */
+  background-position: center; /* Center the background image */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.Order-text {
+  position: absolute; /* Position absolutely within the parent */
+  top: 50%; /* Align vertically at 50% from the top */
+  left: 20px; /* Adjust the left offset as needed */
+  transform: translateY(-50%); /* Center vertically using translate */
+  color: #df5d0c; /* White text color */
+  font-size: 36px; /* Large font size */
+  font-weight: bold; /* Bold text */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Text shadow for contrast */
+}

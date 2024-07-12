@@ -1,75 +1,107 @@
 .login-popup {
-  position: absolute;
-  z-index: 1;
-  width: 100%;
-  height: 100%;
-  background-color: #00000090;
-  display: grid;
+  position: fixed; /* Ensure the popup stays in the same place */
+  top: 0; /* Position at the top */
+  left: 0; /* Position at the left */
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+  display: flex; /* Flexbox for centering */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  z-index: 1000; /* Ensure it's above other content */
 }
 
+/* Container for the form elements */
 .login-popup-container {
-  place-self: center;
-  width: max(23vx, 330px);
-  color: #808080;
-  background-color: white;
-  display: flex;
-  flex-direction: column;
-  gap: 25px;
-  padding: 25px 30px;
-  border-radius: 8px;
-  font-size: 14px;
-  animation: fadeIn 0.5s ease-in-out;
+  width: 330px; /* Fixed width for the popup */
+  background-color: white; /* White background */
+  display: flex; /* Flexbox for layout */
+  flex-direction: column; /* Column layout */
+  gap: 25px; /* Space between elements */
+  padding: 25px 30px; /* Padding around the container */
+  border-radius: 8px; /* Rounded corners */
+  font-size: 14px; /* Base font size */
+  animation: fadeIn 0.5s ease-in-out; /* Fade-in animation */
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2); /* Subtle shadow */
 }
 
+/* Title section with close button */
 .login-popup-title {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  color: black;
+  display: flex; /* Flexbox for layout */
+  justify-content: space-between; /* Space between title and close button */
+  align-items: center; /* Center items vertically */
+  color: black; /* Black text color */
 }
 
+/* Style for the close button */
 .login-popup-title img {
-  width: 16px;
-  cursor: pointer;
+  width: 16px; /* Size of the close button */
+  cursor: pointer; /* Pointer cursor on hover */
 }
 
+/* Container for input fields */
 .login-popup-inputs {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
+  display: flex; /* Flexbox for layout */
+  flex-direction: column; /* Column layout */
+  gap: 20px; /* Space between input fields */
 }
 
+/* Style for input fields */
 .login-popup-inputs input {
-  outline: none;
-  border: 1px solid #c9c9c9;
-  padding: 10px;
-  border-radius: 4px;
+  outline: none; /* Remove default outline */
+  border: 1px solid #c9c9c9; /* Light gray border */
+  padding: 10px; /* Padding inside the input */
+  border-radius: 4px; /* Rounded corners */
 }
 
+/* Style for the submit button */
 .login-popup-container button {
-  border: none;
-  outline: none;
-  background-color: #50e108;
-  color: white;
-  padding: 10px;
-  border-radius: 4px;
-  cursor: pointer;
-  font-size: 15px;
+  border: none; /* Remove default border */
+  outline: none; /* Remove default outline */
+  background-color: #50e108; /* Green button background */
+  color: white; /* White text color */
+  padding: 10px; /* Padding inside the button */
+  border-radius: 4px; /* Rounded corners */
+  cursor: pointer; /* Pointer cursor on hover */
+  font-size: 15px; /* Slightly larger font size */
 }
 
+/* Hover effect for the submit button */
+.login-popup-container button:hover {
+  background-color: #40c008; /* Darker green on hover */
+}
+
+/* Style for the terms and conditions section */
 .login-popup-condition {
-  display: flex;
-  align-items: start;
-  gap: 8px;
-  margin-top: -15px;
+  display: flex; /* Flexbox for layout */
+  align-items: center; /* Center items vertically */
+  gap: 8px; /* Space between checkbox and text */
+  justify-content: center; /* Center the entire section */
+  margin-top: -15px; /* Adjusted margin */
+  font-size: 12px; /* Smaller font size */
+  color: #808080; /* Light gray text color */
 }
 
+/* Adjusted margin for checkbox */
 .login-popup-condition input {
-  margin-top: 5px;
+  margin-top: 0; /* Remove margin */
 }
 
+/* Style for the clickable links */
 .login-popup p span {
-  color: #50e108;
-  cursor: pointer;
-  font-weight: 500;
+  color: #50e108; /* Green color for links */
+  cursor: pointer; /* Pointer cursor on hover */
+  font-weight: 500; /* Medium font weight */
+}
+
+/* Animation for fade-in effect */
+@keyframes fadeIn {
+  from {
+    opacity: 0; /* Start fully transparent */
+    transform: translateY(-10px); /* Start slightly above */
+  }
+  to {
+    opacity: 1; /* End fully opaque */
+    transform: translateY(0); /* End at original position */
+  }
 }

@@ -7,14 +7,6 @@ import foodData from "../foodData.json";
 import "./Menu.css";
 
 // Importing individual food images
-import foodImage1 from "../Assets/food_2.png";
-import foodImage2 from "../Assets/food_3.png";
-import foodImage3 from "../Assets/food_4.png";
-import foodImage4 from "../Assets/food_5.png";
-import foodImage5 from "../Assets/food_6.png";
-import foodImage6 from "../Assets/food_7.png";
-import foodImage7 from "../Assets/food_8.png";
-import foodImage8 from "../Assets/food_9.png";
 import foodImage9 from "../Assets/food_10.png";
 import foodImage10 from "../Assets/food_11.png";
 import foodImage11 from "../Assets/food_12.png";
@@ -25,7 +17,15 @@ import foodImage15 from "../Assets/food_16.png";
 import foodImage16 from "../Assets/food_17.png";
 import foodImage17 from "../Assets/food_18.png";
 import foodImage18 from "../Assets/food_19.png";
+import foodImage1 from "../Assets/food_2.png";
 import foodImage19 from "../Assets/food_20.png";
+import foodImage2 from "../Assets/food_3.png";
+import foodImage3 from "../Assets/food_4.png";
+import foodImage4 from "../Assets/food_5.png";
+import foodImage5 from "../Assets/food_6.png";
+import foodImage6 from "../Assets/food_7.png";
+import foodImage7 from "../Assets/food_8.png";
+import foodImage8 from "../Assets/food_9.png";
 
 import foodImage20 from "../Assets/food_26.png";
 import foodImage21 from "../Assets/salad.png";
