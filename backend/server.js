@@ -7,7 +7,7 @@ import userRouter from "./routes/userRoute.js";
 
 // app config
 const app = express();
-const port = 3000;
+const port = 3001;
 
 // middleware
 app.use(express.json());

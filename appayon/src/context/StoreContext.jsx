@@ -4,7 +4,7 @@ import { createContext, useState } from "react";
 export const StoreContext = createContext({});
 const StoreContextProvider = (props) => {
   //const [food_list, setFoodList] = useState(food_list);
-  const url = "https://localhost:8080";
+  const url = "http://localhost:3001";
   const [token,setToken] = useState("");
   const contextValue = {
     //food_list: food_list,
