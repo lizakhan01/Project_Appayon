@@ -97,7 +97,7 @@ import { Navigate, Route, BrowserRouter as Router, Routes } from "react-router-d
 import "./App.css";
 import Home from "./Components/Home";
 import LoginPopup from "./Components/LoginPopup/LoginPopup";
-import Menu from "./Components/Menu";
+import Menu from "./Components/MenuBar";
 import MenuItemDetail from "./Components/MenuItemDetail";
 import Navbar from "./Components/Navbar";
 import SignIn from "./Components/SignIn";
