@@ -22,7 +22,7 @@ app.use("/images",express.static('uploads'));
 app.use("/api/user", userRouter);
 
 app.get("/", (req, res) => {
-    res.send("API Working");
+    res.send("Server is running");
 });
 
 app.listen(port, () =>{
