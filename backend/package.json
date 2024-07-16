@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "server": "nodemon server.js",
-    "vercel-start": "node index.js"
+    "vercel-start": "node server.js"
   },
   "author": "",
   "license": "ISC",
