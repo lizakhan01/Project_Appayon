@@ -6,7 +6,7 @@ const StoreContextProvider = (props) => {
   //const [food_list, setFoodList] = useState(food_list);
   const baseUrl =
     process.env.NODE_ENV === "production"
-      ? "https://project-appayon-backend-l8c4mannf-khadiza-khanom-lizas-projects.vercel.app"
+      ? "project-appayon-backend-fhqd8z819-khadiza-khanom-lizas-projects.vercel.app"
       : "http://localhost:3001";
 
   const url = `${baseUrl}/api`;
