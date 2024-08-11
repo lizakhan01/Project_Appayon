@@ -121,230 +121,230 @@ export const food_list = [
         _id: "1",
         name: "Greek salad",
         image: food_1,
-        price: 12,
-        description: "Food provides essential nutrients for overall health and well-being",
+        price: 120,
+        description: "A fresh and flavorful salad rich in essential nutrients for a healthy diet",
         category: "Salad"
     },
     {
         _id: "2",
         name: "Veg salad",
         image: food_2,
-        price: 18,
-        description: "Food provides essential nutrients for overall health and well-being",
+        price: 110,
+        description: "A vibrant mix of vegetables that boosts your daily vitamin intake",
         category: "Salad"
     }, {
         _id: "3",
         name: "Clover Salad",
         image: food_3,
-        price: 16,
-        description: "Food provides essential nutrients for overall health and well-being",
+        price: 130,
+        description: "A nutritious salad filled with a variety of greens for a balanced diet",
         category: "Salad"
     }, {
         _id: "4",
         name: "Chicken Salad",
         image: food_4,
-        price: 24,
-        description: "Food provides essential nutrients for overall health and well-being",
+        price: 150,
+        description: "A protein-packed salad perfect for a wholesome meal",
         category: "Salad"
     }, {
         _id: "5",
         name: "Lasagna Rolls",
         image: food_5,
-        price: 14,
-        description: "Food provides essential nutrients for overall health and well-being",
+        price: 140,
+        description: "A savory dish with layers of pasta and cheese for comfort food lovers",
         category: "Rolls"
     }, {
         _id: "6",
         name: "Peri Peri Rolls",
         image: food_6,
-        price: 12,
-        description: "Food provides essential nutrients for overall health and well-being",
+        price: 160,
+        description: "Spicy and tangy rolls that add a kick to your snack time",
         category: "Rolls"
     }, {
         _id: "7",
         name: "Chicken Rolls",
         image: food_7,
-        price: 20,
-        description: "Food provides essential nutrients for overall health and well-being",
+        price: 180,
+        description: "Delicious chicken wrapped in a crispy roll for a satisfying bite",
         category: "Rolls"
     }, {
         _id: "8",
         name: "Veg Rolls",
         image: food_8,
-        price: 15,
-        description: "Food provides essential nutrients for overall health and well-being",
+        price: 150,
+        description: "A crispy, veggie-filled roll that's perfect for a quick and tasty snack",
         category: "Rolls"
     }, {
         _id: "9",
         name: "Ripple Ice Cream",
         image: food_9,
-        price: 14,
-        description: "Food provides essential nutrients for overall health and well-being",
+        price: 140,
+        description: "Creamy ice cream with a swirl of flavor to satisfy your sweet cravings",
         category: "Deserts"
     }, {
         _id: "10",
         name: "Fruit Ice Cream",
         image: food_10,
-        price: 22,
-        description: "Food provides essential nutrients for overall health and well-being",
+        price: 200,
+        description: "A refreshing ice cream made with real fruit for a natural sweetness",
         category: "Deserts"
     }, {
         _id: "11",
         name: "Jar Ice Cream",
         image: food_11,
-        price: 10,
-        description: "Food provides essential nutrients for overall health and well-being",
+        price: 190,
+        description: "Convenient and indulgent, this ice cream is packed in a jar for a quick treat",
         category: "Deserts"
     }, {
         _id: "12",
         name: "Vanilla Ice Cream",
         image: food_12,
-        price: 12,
-        description: "Food provides essential nutrients for overall health and well-being",
+        price: 180,
+        description: "Classic vanilla ice cream, smooth and rich, perfect for any dessert",
         category: "Deserts"
     },
     {
         _id: "13",
         name: "Chicken Sandwich",
         image: food_13,
-        price: 12,
-        description: "Food provides essential nutrients for overall health and well-being",
+        price: 150,
+        description: "A hearty sandwich with tender chicken for a fulfilling meal",
         category: "Sandwich"
     },
     {
         _id: "14",
         name: "Vegan Sandwich",
         image: food_14,
-        price: 18,
-        description: "Food provides essential nutrients for overall health and well-being",
+        price: 120,
+        description: "A delicious and healthy plant-based sandwich, full of flavor",
         category: "Sandwich"
     }, {
         _id: "15",
         name: "Grilled Sandwich",
         image: food_15,
-        price: 16,
-        description: "Food provides essential nutrients for overall health and well-being",
+        price: 160,
+        description: "Crispy and warm, this sandwich is grilled to perfection",
         category: "Sandwich"
     }, {
         _id: "16",
         name: "Bread Sandwich",
         image: food_16,
-        price: 24,
-        description: "Food provides essential nutrients for overall health and well-being",
+        price: 150,
+        description: "Simple yet satisfying, a versatile sandwich for any occasion",
         category: "Sandwich"
     }, {
         _id: "17",
         name: "Cup Cake",
         image: food_17,
-        price: 14,
-        description: "Food provides essential nutrients for overall health and well-being",
+        price: 120,
+        description: "A sweet and moist treat, perfect for a quick dessert",
         category: "Cake"
     }, {
         _id: "18",
         name: "Vegan Cake",
         image: food_18,
-        price: 12,
-        description: "Food provides essential nutrients for overall health and well-being",
+        price: 130,
+        description: "A plant-based cake that's as delicious as it is healthy",
         category: "Cake"
     }, {
         _id: "19",
         name: "Butterscotch Cake",
         image: food_19,
-        price: 20,
-        description: "Food provides essential nutrients for overall health and well-being",
+        price: 220,
+        description: "Rich and sweet, this cake is a butterscotch lover's dream",
         category: "Cake"
     }, {
         _id: "20",
         name: "Sliced Cake",
         image: food_20,
-        price: 15,
-        description: "Food provides essential nutrients for overall health and well-being",
+        price: 100,
+        description: "A slice of deliciousness, perfect for sharing or indulging alone",
         category: "Cake"
     }, {
         _id: "21",
         name: "Garlic Mushroom ",
         image: food_21,
-        price: 14,
-        description: "Food provides essential nutrients for overall health and well-being",
+        price: 140,
+        description: "Savory mushrooms infused with the bold flavor of garlic",
         category: "Pure Veg"
     }, {
         _id: "22",
         name: "Fried Cauliflower",
         image: food_22,
-        price: 22,
-        description: "Food provides essential nutrients for overall health and well-being",
+        price: 120,
+        description: "Crispy on the outside, tender on the inside, this fried cauliflower is a must-try",
         category: "Pure Veg"
     }, {
         _id: "23",
         name: "Mix Veg Pulao",
         image: food_23,
-        price: 10,
-        description: "Food provides essential nutrients for overall health and well-being",
+        price: 130,
+        description: "A fragrant rice dish packed with a variety of vegetables",
         category: "Pure Veg"
     }, {
         _id: "24",
         name: "Rice Zucchini",
         image: food_24,
-        price: 12,
-        description: "Food provides essential nutrients for overall health and well-being",
+        price: 140,
+        description: "A light and nutritious dish combining rice and fresh zucchini",
         category: "Pure Veg"
     },
     {
         _id: "25",
         name: "Cheese Pasta",
         image: food_25,
-        price: 12,
-        description: "Food provides essential nutrients for overall health and well-being",
+        price: 180,
+        description: "Creamy and cheesy, this pasta is comfort food at its best",
         category: "Pasta"
     },
     {
         _id: "26",
         name: "Tomato Pasta",
         image: food_26,
-        price: 18,
-        description: "Food provides essential nutrients for overall health and well-being",
+        price: 190,
+        description: "A tangy and savory pasta made with rich tomato sauce",
         category: "Pasta"
     }, {
         _id: "27",
         name: "Creamy Pasta",
         image: food_27,
-        price: 16,
-        description: "Food provides essential nutrients for overall health and well-being",
+        price: 200,
+        description: "Smooth and rich, this pasta is coated in a delicious creamy sauce",
         category: "Pasta"
     }, {
         _id: "28",
         name: "Chicken Pasta",
         image: food_28,
-        price: 24,
-        description: "Food provides essential nutrients for overall health and well-being",
+        price: 230,
+        description: "A hearty pasta dish with tender chicken and flavorful sauce",
         category: "Pasta"
     }, {
         _id: "29",
         name: "Buttter Noodles",
         image: food_29,
-        price: 14,
-        description: "Food provides essential nutrients for overall health and well-being",
+        price: 210,
+        description: "Simple yet delicious, these noodles are coated in a rich buttery sauce",
         category: "Noodles"
     }, {
         _id: "30",
         name: "Veg Noodles",
         image: food_30,
-        price: 12,
-        description: "Food provides essential nutrients for overall health and well-being",
+        price: 170,
+        description: "A stir-fried noodle dish loaded with fresh vegetables",
         category: "Noodles"
     }, {
         _id: "31",
         name: "Somen Noodles",
         image: food_31,
-        price: 20,
-        description: "Food provides essential nutrients for overall health and well-being",
+        price: 200,
+        description: "Thin, delicate noodles perfect for a light and refreshing meal",
         category: "Noodles"
     }, {
         _id: "32",
         name: "Cooked Noodles",
         image: food_32,
-        price: 15,
-        description: "Food provides essential nutrients for overall health and well-being",
+        price: 140,
+        description: "Comforting and warm, these noodles are cooked to perfection",
         category: "Noodles"
     }
 ]
