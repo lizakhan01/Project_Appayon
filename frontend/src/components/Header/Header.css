@@ -1,6 +1,6 @@
 .header {
-  height: 50vw;
-  margin: 30px auto;
+  height: 55vw;
+  margin: 10px auto;
   background: url("./header_img.png") no-repeat center center;
   background-size: cover;
   position: relative;
@@ -18,7 +18,7 @@
   bottom: 70%;
   left: 6vw;
   font-size: x-large;
-  animation: fadeIn 3s;
+  animation: 3s;
   padding: 1vw;
   border-radius: 10px;
 }
@@ -28,7 +28,6 @@
   color: white;
   font-size: max(3vw, 22px);
 }
-
 .header-contents p {
   color: rgb(202, 197, 242);
   font-size: 1.5vw;
@@ -37,10 +36,30 @@
 
 .header-contents button {
   border: none;
-  color: rgb(15, 224, 224);
+  color: rgb(31, 207, 11);
   font-weight: 500;
   padding: 1vw 2.3vw;
-  background-color: white;
   font-size: max(1vw, 13px);
   border-radius: 30px;
+}
+
+.header-contents button:hover {
+  background-color: #f2fff7;
+}
+
+@media (max-width: 1050px) {
+  .header-contents {
+    max-width: 45%;
+  }
+}
+@media (max-width: 750px) {
+  .header-contents {
+    max-width: 65%;
+  }
+  .header-contents p {
+    display: none;
+  }
+  .header-contents button {
+    padding: 2vw 4vw;
+  }
 }
