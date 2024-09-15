@@ -262,7 +262,7 @@ export const food_list = [
         category: "Cake"
     }, {
         _id: "21",
-        name: "Garlic Mushroom ",
+        name: "Garlic Mushroom",
         image: food_21,
         price: 140,
         description: "Savory mushrooms infused with the bold flavor of garlic",
