@@ -1,0 +1,26 @@
+.verify {
+  min-height: 60vh;
+  display: grid;
+}
+
+.verify .spinner {
+  width: 100px;
+  height: 100px;
+  place-self: center;
+  border: 5px solid #f3f3f3;
+  border-top-color: blue;
+  border-radius: 50%;
+  animation: rotate;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
