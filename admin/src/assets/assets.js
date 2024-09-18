@@ -1,5 +1,5 @@
 
-import { BACKEND_URL } from '../config';
+//import { BACKEND_URL } from 'dotenv/config';
 import add_icon from './add_icon.png';
 import logo from './logo.png';
 import order_icon from './order_icon.png';
