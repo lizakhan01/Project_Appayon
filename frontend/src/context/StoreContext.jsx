@@ -6,7 +6,7 @@ export const StoreContext = createContext(null);
 
 const StoreContextProvider = (props) => {
   const [cartItems, setCartItems] = useState({});
-  const url = "http://localhost:4000";	
+  //const url = process.env.BACKEND_URL;	
   const [token,setToken] = useState("");
   const [food_list,setFoodList] = useState([]);
 
@@ -17,8 +17,7 @@ const StoreContextProvider = (props) => {
       setCartItems((prev) => ({ ...prev, [itemId]: prev[itemId] + 1 }));
     }
     if (token) {
-      await axios.post(
-        url + "/api/cart/add",{itemId},{headers:{token}}
+      await axios.post(`${process.env.BACKEND_URL}/api/cart/add`,{itemId},{headers:{token}}
       )
     }
   };
@@ -26,8 +25,7 @@ const StoreContextProvider = (props) => {
   const removeFromCart = async (itemId) => {
     setCartItems((prev) => ({ ...prev, [itemId]: prev[itemId] - 1 }));
     if (token) {
-      await axios.post(
-        url + "/api/cart/remove",{itemId},{headers:{token}}
+      await axios.post(`${process.env.BACKEND_URL}/api/cart/remove`,{itemId},{headers:{token}}
       )
     }
   };
@@ -44,12 +42,12 @@ const StoreContextProvider = (props) => {
   };
 
   const fetchFoodList = async () => {
-      const response = await axios.get(url+"/api/food/list");	
+      const response = await axios.get(`${process.env.BACKEND_URL}/api/food/list`,{},{headers:{token}});
       setFoodList(response.data.data); 
   }
 
   const loadCartData = async (token) => {
-    const response = await axios.post(url + "/api/cart/get",{},{headers:{token}});
+    const response = await axios.post(`${process.env.BACKEND_URL}/api/cart/get`,{},{headers:{token}});
     setCartItems(response.data.cartData);
   }
 
@@ -71,7 +69,7 @@ const StoreContextProvider = (props) => {
     addToCart,
     removeFromCart,
     getTotalCartAmount,
-    url,
+    //url,
     token,
     setToken
   };

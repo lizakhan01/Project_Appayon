@@ -9,7 +9,7 @@ import List from './pages/List/List'
 import Orders from './pages/Orders/Orders'
 
 const App = () => {
-  const url = "http://localhost:4000";
+  const url = import.meta.env.FRONTEND_URL;
   return (
     <div>
       <ToastContainer/>
