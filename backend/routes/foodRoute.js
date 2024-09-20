@@ -1,4 +1,4 @@
-import express from 'express';
+/*import express from 'express';
 import multer from 'multer';
 import { addFood, listFood, removeFood } from '../controllers/foodController.js';
 
@@ -17,5 +17,18 @@ const upload = multer({storage:storage})
 foodRouter.post("/add",upload.single("image"),addFood)
 foodRouter.get("/list",listFood)
 foodRouter.post("/remove",removeFood);
+
+export default foodRouter;
+*/
+
+import express from 'express';
+import { addFood, listFood, removeFood } from '../controllers/foodController.js';
+// simport { upload } from '../utils/cloudinaryConfig.js';
+
+const foodRouter = express.Router();
+
+foodRouter.post("/add",  addFood);
+foodRouter.get("/list", listFood);
+foodRouter.post("/remove", removeFood);
 
 export default foodRouter;

@@ -9,7 +9,7 @@ import List from './pages/List/List'
 import Orders from './pages/Orders/Orders'
 
 const App = () => {
-  const url = "https://appayon-server.vercel.app";
+  const url = "http://localhost:4000";
   return (
     <div>
       <ToastContainer/>
