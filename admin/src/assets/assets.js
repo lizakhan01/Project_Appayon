@@ -14,4 +14,4 @@ export const assets ={
     parcel_icon
 }
 
-export const url = 'https://appayon-server-jade.vercel.app'
+export const url = 'https://appayon-server-neon.vercel.app'
