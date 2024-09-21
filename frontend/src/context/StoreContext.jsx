@@ -107,7 +107,7 @@ const StoreContextProvider = (props) => {
     if (token) {
       try {
         await axios.post(
-          url + "/api/cart/add",
+          "https://appayon-server-neon.vercel.app/api/cart/add",
           { itemId },
           { headers: { token } }
         );
@@ -130,7 +130,7 @@ const StoreContextProvider = (props) => {
     if (token) {
       try {
         await axios.post(
-          url + "/api/cart/remove",
+          "https://appayon-server-neon.vercel.app/api/cart/remove",
           { itemId },
           { headers: { token } }
         );
@@ -155,7 +155,7 @@ const StoreContextProvider = (props) => {
 
   const fetchFoodList = async () => {
     try {
-      const response = await axios.get(url + "/api/food/list");
+      const response = await axios.get("https://appayon-server-neon.vercel.app/api/food/list");
       if (response.data && response.data.data) {
         setFoodList(response.data.data);
       } else {
