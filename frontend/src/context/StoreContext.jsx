@@ -6,7 +6,7 @@ export const StoreContext = createContext(null);
 
 const StoreContextProvider = (props) => {
   const [cartItems, setCartItems] = useState({});
-  const url = "https://appayon-server-neon.vercel.app";	
+  const url = "http://localhost:4000";	
   const [token,setToken] = useState("");
   const [food_list,setFoodList] = useState([]);
 
@@ -98,7 +98,7 @@ export const StoreContext = createContext(null);
 
 const StoreContextProvider = (props) => {
   const [cartItems, setCartItems] = useState({});
-  const url = "https://appayon-server-neon.vercel.app";
+  const url = "http://localhost:4000";
   const [token, setToken] = useState("");
   const [food_list, setFoodList] = useState([]);
 
@@ -107,7 +107,7 @@ const StoreContextProvider = (props) => {
     if (token) {
       try {
         await axios.post(
-          "https://appayon-server-neon.vercel.app/api/cart/add",
+          "http://localhost:4000/api/cart/add",
           { itemId },
           { headers: { token } }
         );
@@ -130,7 +130,7 @@ const StoreContextProvider = (props) => {
     if (token) {
       try {
         await axios.post(
-          "https://appayon-server-neon.vercel.app/api/cart/remove",
+          "http://localhost:4000/api/cart/remove",
           { itemId },
           { headers: { token } }
         );
@@ -155,7 +155,7 @@ const StoreContextProvider = (props) => {
 
   const fetchFoodList = async () => {
     try {
-      const response = await axios.get("https://appayon-server-neon.vercel.app/api/food/list");
+      const response = await axios.get("http://localhost:4000/api/food/list");
       if (response.data && response.data.data) {
         setFoodList(response.data.data);
       } else {
