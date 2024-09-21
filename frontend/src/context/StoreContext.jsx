@@ -6,7 +6,7 @@ export const StoreContext = createContext(null);
 
 const StoreContextProvider = (props) => {
   const [cartItems, setCartItems] = useState({});
-  const url = "https://appayonserver.vercel.app";	
+  const url = "https://appayon-server-jade.vercel.app";	
   const [token,setToken] = useState("");
   const [food_list,setFoodList] = useState([]);
 
