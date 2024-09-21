@@ -6,11 +6,11 @@ import './MyOrders.css';
 
 const MyOrders = () => {
 
-  const {url,token} = useContext(StoreContext);
+  const {token} = useContext(StoreContext);
   const [data,setData] = useState([]);
   
   const fetchOrders = async () => {
-    const response = await axios.post(url+"/api/order/userorders",{},{headers:{token}});
+    const response = await axios.post("https://appayon-server-jade.vercel.app/api/order/userorders",{},{headers:{token}});
     setData(response.data.data);
     
   }
