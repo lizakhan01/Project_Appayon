@@ -43,7 +43,7 @@ const PlaceOrder = () => {
       amount: getTotalCartAmount()+50,
 
     }
-    let response = await axios.post("http://localhost:4000/api/order/place",orderData,{headers:{token}});
+    let response = await axios.post("https://appayon-server-rho.vercel.app/api/order/place",orderData,{headers:{token}});
     if (response.data.success) {
       const {session_url} = response.data;
       window.location.replace(session_url);

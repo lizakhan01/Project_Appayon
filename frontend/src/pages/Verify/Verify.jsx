@@ -13,7 +13,7 @@ const Verify = () => {
   const navigate = useNavigate();
   
   const verifyPayment= async() => {
-    const response = await axios.post("http://localhost:4000/api/order/verify",{success,orderId});
+    const response = await axios.post("https://appayon-server-rho.vercel.app/api/order/verify",{success,orderId});
     if (response.data.success) {
         navigate("/myorders");
     }
