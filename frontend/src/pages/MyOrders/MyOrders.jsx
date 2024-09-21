@@ -6,7 +6,7 @@ import './MyOrders.css';
 
 const MyOrders = () => {
 
-  const {url,token} = useContext(StoreContext);
+  const {token} = useContext(StoreContext);
   const [data,setData] = useState([]);
   
   const fetchOrders = async () => {

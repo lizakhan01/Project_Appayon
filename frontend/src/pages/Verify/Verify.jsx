@@ -13,12 +13,12 @@ const Verify = () => {
   const navigate = useNavigate();
   
   const verifyPayment= async() => {
-    const response = await axios.post(url+"/api/order/verify",{success,orderId});
+    const response = await axios.post("https://appayon-server-jade.vercel.app/api/order/verify",{success,orderId});
     if (response.data.success) {
         navigate("/myorders");
     }
     else{
-        navigate("/");
+        navigate("/cart");
     }
   }
 
