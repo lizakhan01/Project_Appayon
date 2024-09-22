@@ -98,7 +98,7 @@ export const StoreContext = createContext(null);
 
 const StoreContextProvider = (props) => {
   const [cartItems, setCartItems] = useState({});
-  const url = "https://appayon-server-rho.vercel.app";
+  const url = "https://appayon-server-sepia.vercel.app";
   const [token, setToken] = useState("");
   const [food_list, setFoodList] = useState([]);
 
@@ -107,7 +107,7 @@ const StoreContextProvider = (props) => {
     if (token) {
       try {
         await axios.post(
-          "https://appayon-server-rho.vercel.app/api/cart/add",
+          "https://appayon-server-sepia.vercel.app/api/cart/add",
           { itemId },
           { headers: { token } }
         );
@@ -130,7 +130,7 @@ const StoreContextProvider = (props) => {
     if (token) {
       try {
         await axios.post(
-          "https://appayon-server-rho.vercel.app/api/cart/remove",
+          "https://appayon-server-sepia.vercel.app/api/cart/remove",
           { itemId },
           { headers: { token } }
         );
@@ -155,7 +155,7 @@ const StoreContextProvider = (props) => {
 
   const fetchFoodList = async () => {
     try {
-      const response = await axios.get("https://appayon-server-rho.vercel.app/api/food/list");
+      const response = await axios.get("https://appayon-server-sepia.vercel.app/api/food/list");
       if (response.data && response.data.data) {
         setFoodList(response.data.data);
       } else {

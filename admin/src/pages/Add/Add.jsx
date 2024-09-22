@@ -313,7 +313,7 @@ const Add = ({ url }) => {
     formData.append("file", image);
 
     try {
-        const res = await axios.post('https://appayon-server-rho.vercel.app/upload-cloud', formData);
+        const res = await axios.post('https://appayon-server-sepia.vercel.app/upload-cloud', formData);
         
         if (res.data && res.data.secure_url) {
             console.log("Uploaded image URL:", res.data.secure_url);  // Check if the URL is returned correctly
